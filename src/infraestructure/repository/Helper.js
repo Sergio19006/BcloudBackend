@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 export class Helper {
 
   static connectDatabase() {
-    let uri = "mongodb://localhost:27017/Bookcloud";
+    let uri = "mongodb://mongo:27017/Bookcloud";
     mongoose.connect(uri, { useNewUrlParser: true });
     mongoose.set("useFindAndModify", false);
   }
