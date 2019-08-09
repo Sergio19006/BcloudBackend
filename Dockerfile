@@ -2,6 +2,12 @@ FROM node:10-alpine
 
 RUN mkdir /home/node/app
 
+#Esto deberia ir conectado al /data del droplet crear un volumen entonces
+
+RUN mkdir /data/images/
+
+RUN mkdir /data/epub/
+
 WORKDIR /home/node/app
 
 RUN cd /home/node/app
